@@ -1,0 +1,62 @@
+raw_reviews:
+  type: pandas.CSVDataset
+  filepath: data/01_raw/reviews.csv
+
+clean_reviews:
+  type: pandas.CSVDataset
+  filepath: data/02_intermediate/clean_reviews.csv
+  save_args:
+    index: false
+
+X_train:
+  type: pickle.PickleDataset
+  filepath: data/03_primary/X_train.pkl
+
+X_test:
+  type: pickle.PickleDataset
+  filepath: data/03_primary/X_test.pkl
+
+y_train:
+  type: pickle.PickleDataset
+  filepath: data/03_primary/y_train.pkl
+
+y_test:
+  type: pickle.PickleDataset
+  filepath: data/03_primary/y_test.pkl
+
+X_train_tfidf:
+  type: pickle.PickleDataset
+  filepath: data/04_feature/X_train_tfidf.pkl
+
+X_test_tfidf:
+  type: pickle.PickleDataset
+  filepath: data/04_feature/X_test_tfidf.pkl
+
+tfidf_vectorizer:
+  type: pickle.PickleDataset
+  filepath: data/04_feature/tfidf_vectorizer.pkl
+
+sentiment_model:
+  type: pickle.PickleDataset
+  filepath: data/06_models/sentiment_model.pkl
+
+metrics:
+  type: json.JSONDataset
+  filepath: data/08_reporting/metrics.json
+
+detailed_predictions:
+  type: pandas.CSVDataset
+  filepath: data/08_reporting/detailed_predictions.csv
+  save_args:
+    index: false
+
+detailed_report:
+  type: json.JSONDataset
+  filepath: data/08_reporting/detailed_report.json
+
+sentiment_report_html:
+  type: text.TextDataset
+  filepath: data/09_ui/sentiment_report.html
+
+
+
