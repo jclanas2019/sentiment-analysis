@@ -52,11 +52,11 @@ kedro install
 
 ---
 
-```
 ## Comandos útiles de Kedro para el proyecto `sentiment-analysis`
 
 ### 1. Inicializar entorno del proyecto
-```bash
+
+```
 cd /Users/juancarloslanasocampo/Documents/2-lab-ai/workshop-kedro/sentiment-analysis
 ```
 
